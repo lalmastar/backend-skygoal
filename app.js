@@ -15,8 +15,9 @@ const PORT = process.env.PORT || 4000;
 
 dbConnect();
 app.use(cors({
-    origin: corsOptions,
+    // origin: corsOptions,
     // origin: 'http://localhost:3000',
+    origin: 'https://majestic-cuchufli-b5d0ef.netlify.app',
     optionsSuccessStatus:200,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     allowedHeaders: ['X-PINGOTHER', 'Content-Type',"Authorization","Origin", 'HEAD', 'OPTIONS',"Accept","Cache-Control",'Cookie','X-Requested-With'],
